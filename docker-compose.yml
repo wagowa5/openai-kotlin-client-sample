@@ -1,0 +1,26 @@
+version: '3.7'
+
+services:
+  # アプリケーションも一緒に起動したい場合
+  #myapp:
+  #  build:
+  #    context: .
+  #    dockerfile: Dockerfile
+  #  depends_on:
+  #    - mysql
+  #  ports:
+  #    - "8080:8080"
+
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: my-secret-password
+      MYSQL_DATABASE: mydb
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+volumes:
+  mysql-data:
+
