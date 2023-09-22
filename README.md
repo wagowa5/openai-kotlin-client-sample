@@ -1,2 +1,3 @@
 # openai-kotlin-client-sample
-openaiAPIクライアントのkotlin-springbootサンプル …を作りたい
+openaiAPIクライアントのkotlin-springbootサンプルを作りたい
+まだspring-initializrしてdockerfile書いただけ
