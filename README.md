@@ -1,2 +1,2 @@
 # openai-kotlin-client-sample
-openaiAPIクライアントのkotlin-springbootサンプル
+openaiAPIクライアントのkotlin-springbootサンプル …を作りたい
