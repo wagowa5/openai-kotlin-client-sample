@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 import org.springframework.web.reactive.function.client.WebClient
-import org.springframework.web.reactive.function.client.bodyToMono
 import reactor.core.publisher.Mono
 
 @RestController
@@ -35,6 +34,6 @@ class ChatController(
             .header("Authorization", "Bearer YOUR_API_KEY") // APIキーを設定
             .bodyValue(requestBody)
             .retrieve()
-            .bodyToMono() // レスポンスボディの型を指定
+            .bodyToMono(ChatCompletionResponse::class.java) // レスポンスボディの型を指定
     }
 }
