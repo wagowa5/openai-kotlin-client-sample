@@ -20,6 +20,6 @@ class WebClientChatCompletionRepository(
             .bodyValue(chatCompletionRequest)
             .retrieve()
             .bodyToMono(ChatCompletionResponse::class.java)
-            .awaitSingle()
+            .block()!!
     }
 }
