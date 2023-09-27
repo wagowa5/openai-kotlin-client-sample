@@ -1,3 +1,6 @@
 # openai-kotlin-client-sample
 openaiAPIクライアントのkotlin-springbootサンプルを作りたい
-まだspring-initializrしてdockerfile書いただけ
+
+WebClient動かん…
+
+retrofit2で作る
